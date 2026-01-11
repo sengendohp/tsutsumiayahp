@@ -1,46 +1,284 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>津々巳あやのインジャサイト</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="/">
-                    <img src="images/logo.png" alt="AYAIRO 津々巳あやのインジャサイト">
-                </a>
-            </div>
-            
-            <div class="header-right">
-                <div class="social-icons">
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/x-icon.png" alt="X(Twitter)">
-                    </a>
-                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/youtube-icon.png" alt="YouTube">
-                    </a>
-                    <a href="https://note.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/note-icon.png" alt="note">
-                    </a>
-                    <a href="/contact" class="contact-link">お問い合わせ</a>
-                </div>
-                
-                <nav>
-                    <a href="/profile">自己紹介</a>
-                    <a href="/works">仕事情報</a>
-                    <a href="/published">既刊案内</a>
-                    <a href="/links">リンク</a>
-                    <a href="https://pixiv.net/" target="_blank">pixiv</a>
-                    <a href="/blog">ブログ</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>津々巳あや　オフィシャルサイト</title>
 
-    <script src="script.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===============================
+       HEADER
+  ================================ -->
+  <header>
+    <div class="header-container">
+
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="AYAIRO 津々巳あやのインジャサイト">
+        </a>
+      </div>
+
+      <div class="header-right">
+        <div class="social-icons">
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/x-icon.png" alt="X(Twitter)">
+          </a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube-icon.png" alt="YouTube">
+          </a>
+          <a href="https://note.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/note-icon.png" alt="note">
+          </a>
+          <a href="/contact" class="contact-link">お問い合わせ</a>
+        </div>
+
+        <nav>
+          <a href="/profile">自己紹介</a>
+          <a href="/works">仕事情報</a>
+          <a href="/published">既刊案内</a>
+          <a href="/links">リンク</a>
+          <a href="https://pixiv.net/" target="_blank">pixiv</a>
+          <a href="/blog">ブログ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===============================
+       HERO
+  ================================ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img id="sliderImage" src="images/heroslider/hero1.png" alt="トップビジュアル">
+      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===============================
+       TWO COLUMN (上段)
+  ================================ -->
+  <section class="two-column">
+    <div class="two-column-inner">
+
+      <!-- LEFT COLUMN -->
+      <div class="column-left">
+        <div class="latest-label">最新刊</div>
+
+        <div class="latest-cover">
+          <a href="https://www.amazon.co.jp/dp/B0FV6LVRML/" target="_blank" rel="noopener noreferrer" class="latest-cover-link">
+            <img src="images/saishinkan/SKnarr01_coverB1.png" alt="最新刊 表紙">
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="column-right">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="images/profilepicture.png" alt="津々巳 あや">
+          </div>
+          <p class="profile-name">津々巳 あや</p>
+        </div>
+
+        <div class="profile-card profile-card-secondary">
+          <ul class="profile-list">
+            <li>東京都在住</li>
+            <li>ふたご座</li>
+            <li>出身：香川県</li>
+            <li>フリーの漫画家兼イラストレーター</li>
+          </ul>
+          <ul class="profile-list profile-list-history">
+            <li>2000年に白泉社「ザ・花とゆめ」にて少女漫画デビュー</li>
+            <li>6年ほど「花とゆめ」系列雑誌で読み切りやシリーズ連載をした後、
+              2006年フレックスコミックス「少年ブラッド」にて少年漫画デビュー。
+              以降、少女漫画や少年漫画を並行してコラボや原作ものを連載
+            </li>
+            <li>2007年以降～ゲーム系エッセイ漫画、4コマ漫画、少年誌系ストーリー漫画、
+              ショートギャグ等、幅広く執筆
+              <br>※ 詳しくは「<a href="/works">仕事情報</a>」へ
+            </li>
+            <li>その他：ゲームスチル、ドラマCDシナリオ、イラストやコミカライズ、
+              企業案件の漫画・イラスト制作
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===============================
+     BOTTOM TWO COLUMN（右カラムにツイート埋め込み）
+=============================== -->
+<section class="bottom-two-column">
+  <div class="bottom-two-column-inner">
+
+    <!-- LEFT COLUMN（NOW ON SALE! を配置） -->
+    <div class="bottom-column-left">
+      <div class="bottom-left-inner">
+        <h2 class="now-on-sale">NOW ON SALE!</h2>
+
+        <!-- ここに商品やコンテンツを追加していく -->
+      </div>
+      <div class="product-grid">
+  <a href="https://www.amazon.co.jp/%E8%B1%8A%E7%94%B0%E3%81%95%E3%82%93%E3%81%AF%E6%82%A9%E3%81%BE%E3%81%AA%E3%81%84%E3%80%82-%EF%BC%93-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B0B8QPYMC8?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product1.jpg" alt="豊田さんは悩まない。３">
+    <p class="product-name">豊田さんは悩まない。３</p>
+  </a>
+
+  <a href="https://www.amazon.co.jp/%E3%81%93%E3%81%86%E8%A6%8B%E3%81%88%E3%81%A6%E6%97%A5%E6%B8%A1%E3%81%8F%E3%82%93%E3%81%AE%E5%A5%B3%E5%AD%90%E5%8A%9B%E3%81%AF%EF%BC%95%EF%BC%93%E4%B8%87%E3%81%A7%E3%81%99-%E4%B9%99%E5%A5%B3%E3%81%BB%E3%82%8B%E3%82%82%E3%82%93-2-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B09TZJ44NF?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product2.jpg" alt="こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2">
+    <p class="product-name">こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2</p>
+  </a>
+
+  <a href="https://www.amazon.co.jp/%E6%81%8B%E3%81%AF%E3%80%81%E3%82%A2%E3%83%A9%E3%82%B5%E3%83%BC%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%8B%E3%82%89%E3%80%822-%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%BB%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%B4%A5%E3%80%85%E5%B7%B3%E3%81%82%E3%82%84-ebook/dp/B08BHHHXQH?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product3.jpg" alt="恋は、アラサーになってから。2">
+    <p class="product-name">恋は、アラサーになってから。2</p>
+  </a>
+
+  <a href="https://www.amazon.co.jp/ALIVE-Xtreme-Vacation-%E5%85%AC%E5%BC%8F%EF%BC%94%E3%82%B3%E3%83%9E%E3%83%9E%E3%83%B3%E3%82%AC-%E3%82%84%E3%82%8F%E3%82%89%E3%81%8B%EF%BC%94%E3%82%B3%E3%83%9E%E2%98%86%E3%83%96%E3%82%A4%E3%83%96%E3%82%A4-ebook/dp/B084L1P7ZY?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product4.jpg" alt="DEAD OR ALIVE Xtreme Venus Vacation 公式４コママンガ やわらか４コマ☆ブイブイ">
+    <p class="product-name">DEAD OR ALIVE Xtreme Venus Vacation 公式４コママンガ やわらか４コマ☆ブイブイ</p>
+  </a>
+
+  <a href="https://www.amazon.co.jp/%E8%B2%9E%E5%AD%90%E3%81%95%E3%82%93%E3%81%A8%E3%81%95%E3%81%A0%E3%81%93%E3%81%A1%E3%82%83%E3%82%93-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B07RMCJDQX?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product5.jpg" alt="貞子さんとさだこちゃん">
+    <p class="product-name">貞子さんとさだこちゃん</p>
+  </a>
+
+  <a href="https://www.amazon.co.jp/%E4%BA%BA%E6%B0%97%E3%83%9E%E3%83%B3%E3%82%AC%E5%AE%B6%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE15%E3%81%AE%E6%B3%95%E5%89%87-2-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B07PGRKKFX?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
+    <img src="images/nowonsale/product6.jpg" alt="人気マンガ家になるための15の法則2">
+    <p class="product-name">人気マンガ家になるための15の法則2</p>
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- RIGHT COLUMN（ツイート埋め込み） -->
+    <div class="bottom-column-right twitter-column">
+      <blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">
+          「少女に転生したシリアルキラー」<br>
+          単行本１巻CM動画です。<br>
+          単行本特典や、コラボについてもまとめております。<br><br>
+          声の出演/ ブリドカットセーラ恵美さん(<a href="https://twitter.com/SarahBridcutt">@SarahBridcutt</a>)<br>
+          <a href="https://twitter.com/hashtag/%E5%B0%91%E5%A5%B3%E3%81%AB%E8%BB%A2%E7%94%9F%E3%81%97%E3%81%9F%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%AD%E3%83%A9%E3%83%BC?src=hash">#少女に転生したシリアルキラー</a>
+          <a href="https://t.co/PTnRRcShGL">pic.twitter.com/PTnRRcShGL</a>
+        </p>
+        &mdash; 津々巳あや＠新連載「少女に転生したシリアルキラー」 (@aya67b) 
+        <a href="https://twitter.com/aya67b/status/1981294849963020463">October 23, 2025</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===============================
+     BOTTOM SINGLE SECTION（1列帯）
+=============================== -->
+<section class="bottom-single-section">
+  <div class="bottom-single-inner">
+    <div class="line-stamp-label">LINEスタンプ発売中！</div>
+  </div>
+</section>
+
+<!-- ===============================
+     LINE STAMP GRID（3列1行）
+=============================== -->
+<section class="line-stamp-grid-section">
+  <div class="line-stamp-grid">
+    <a href="https://store.line.me/stickershop/product/1530663/ja" target="_blank" class="line-stamp-item">
+      <div class="line-stamp-img-wrapper">
+        <img src="images/linestamp/stamp1.png" alt="明×暗SCRAMBLE">
+      </div>
+      <p class="line-stamp-name">明×暗SCRAMBLE</p>
+    </a>
+    <a href="https://store.line.me/stickershop/product/14378635/ja" target="_blank" class="line-stamp-item">
+      <div class="line-stamp-img-wrapper">
+        <img src="images/linestamp/stamp2.png" alt="『豊田さんは悩まない。』悩まない">
+      </div>
+      <p class="line-stamp-name">『豊田さんは悩まない。』悩まない</p>
+    </a>
+    <a href="https://store.line.me/stickershop/product/1261756/ja" target="_blank" class="line-stamp-item">
+      <div class="line-stamp-img-wrapper">
+        <img src="images/linestamp/stamp3.png" alt="女子大生の日常">
+      </div>
+      <p class="line-stamp-name">女子大生の日常</p>
+    </a>
+  </div>
+</section>
+
+<!-- ===============================
+     TRIAL READING SECTION
+================================ -->
+<section class="bottom-single-section">
+  <div class="bottom-single-inner">
+    <div class="trial-reading-label">試し読み</div>
+  </div>
+</section>
+
+<section class="trial-reading-grid-section">
+  <div class="trial-reading-grid">
+    <!-- 1アイテム -->
+    <a href="https://www.amazon.co.jp/dp/B0FV6LVRML/?asin=B0FV6LVRML&revisionId=e1d76ff3&format=3&depth=1" target="_blank" rel="noopener noreferrer" class="trial-reading-item">
+      <div class="trial-reading-img-wrapper">
+        <img src="/images/trial/trial1.png" alt="試し読み1">
+      </div>
+      <div class="trial-reading-name">
+        少女に転生したシリアルキラーは、無慈悲にNarrを追い詰める。
+      </div>
+    </a>
+
+    <!-- 2アイテム -->
+    <a href="https://www.amazon.co.jp/ALIVE-Xtreme-Vacation-%E5%85%AC%E5%BC%8F%EF%BC%94%E3%82%B3%E3%83%9E%E3%83%9E%E3%83%B3%E3%82%AC-%E3%82%84%E3%82%8F%E3%82%89%E3%81%8B%EF%BC%94%E3%82%B3%E3%83%9E%E2%98%86%E3%83%96%E3%82%A4%E3%83%96%E3%82%A4-ebook/dp/B084L1P7ZY?ref_=ast_author_dp_rw&th=1&psc=1&asin=B084L1P7ZY&revisionId=ffd71dad&format=3&depth=1" target="_blank" rel="noopener noreferrer" class="trial-reading-item">
+      <div class="trial-reading-img-wrapper">
+        <img src="/images/trial/trial2.png" alt="試し読み2">
+      </div>
+      <div class="trial-reading-name">
+        DEAD OR ALIVE Xtreme Venus Vacation 公式４コママンガ やわらか４コマ☆ブイブイ
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- 画面右下に固定：トップへ戻るボタン -->
+<a href="#" class="floating-btn" id="scrollToTop">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</a>
+
+
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
 </body>
+
+<footer>
+    <div class="footer-inner">
+        <p><a href="http://tutumiaya.com/" target="_blank">｜ホームページ｜</a></p>
+        <p>Copyright 2026 - Tsutsumi Aya All Rights Reserved.</p>
+        <p>無断転載・二次利用は禁止しております</p>
+	    
+    </div>
+</footer>
+
 </html>
