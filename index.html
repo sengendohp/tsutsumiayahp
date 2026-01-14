@@ -14,11 +14,14 @@
   >
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JS -->
+  <script src="/js/script.js" defer></script>
 </head>
 
 <body>
-    
+
 
 <!-- ===============================
      HEADER
@@ -28,47 +31,49 @@
 
     <div class="logo">
       <a href="/">
-        <img src="images/logo.png" alt="AYAIRO 津々巳あや公式ページ">
+        <img src="/images/logo.png" alt="AYAIRO 津々巳あや公式ページ">
       </a>
     </div>
 
     <div class="header-right">
-        <button class="menu-toggle" aria-label="メニュー">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+      <button class="menu-toggle" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <div class="social-icons">
+        <a href="https://sengendo.jp/" target="_blank" rel="noopener noreferrer">
+          <img src="/images/ヘッダー1.png" alt="X(Twitter)">
+        </a>
         <a href="https://x.com/aya67b" target="_blank" rel="noopener noreferrer">
-          <img src="images/x-icon.png" alt="X(Twitter)">
+          <img src="/images/x-icon.png" alt="X(Twitter)">
         </a>
         <a href="https://www.youtube.com/@aya67b" target="_blank" rel="noopener noreferrer">
-          <img src="images/youtube-icon.png" alt="YouTube)">
+          <img src="/images/youtube-icon.png" alt="YouTube">
         </a>
         <a href="https://note.com/aya67b" target="_blank" rel="noopener noreferrer">
-          <img src="images/note-icon.png" alt="note">
+          <img src="/images/note-icon.png" alt="note">
         </a>
         <a href="/contact" class="contact-link">お問い合わせ</a>
       </div>
 
       <nav class="main-nav">
-        <a href="/profile" class="nav-link">自己紹介</a>
+        <!--<a href="/profile" class="nav-link">自己紹介</a>-->
         <a href="/works" class="nav-link">仕事情報</a>
-        <a href="/published" class="nav-link">既刊案内</a>
+        <a href="/comics" class="nav-link">既刊案内</a>
 
         <!-- ドロップダウン -->
-<div class="nav-dropdown">
-  <!-- PC hover / SP click でメニュー表示だけ -->
-  <a href="javascript:void(0)" class="nav-link dropdown-trigger">リンク</a>
+        <div class="nav-dropdown">
+          <!-- PC hover / SP click でメニュー表示だけ -->
+          <a href="javascript:void(0)" class="nav-link dropdown-trigger">リンク</a>
 
-  <div class="dropdown-menu">
-    <a href="https://comic-walker.com/search?keyword=%E6%B4%A5%E3%80%85%E5%B7%B3%E3%81%82%E3%82%84" target="_blank">カドコミ</a>
-    <a href="https://www.amazon.co.jp/stores/%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84/author/B004LVBSUK" target="_blank">Amazon</a>
-    <a href="https://sengendo.jp/" target="_blank">千元堂</a>
-  </div>
-</div>
-
+          <div class="dropdown-menu">
+            <a href="https://comic-walker.com/search?keyword=%E6%B4%A5%E3%80%85%E5%B7%B3%E3%81%82%E3%82%84" target="_blank">カドコミ</a>
+            <a href="https://www.amazon.co.jp/stores/%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84/author/B004LVBSUK" target="_blank">Amazon</a>
+            <a href="https://sengendo.jp/" target="_blank">千元堂</a>
+          </div>
+        </div>
 
         <a href="https://www.pixiv.net/users/1718498" target="_blank" class="nav-link">pixiv</a>
         <a href="https://aya67b.livedoor.blog/" target="_blank" class="nav-link">ブログ</a>
@@ -79,16 +84,20 @@
 </header>
 
 
-  <!-- ===============================
-       HERO
-  ================================ -->
-  <section class="hero">
-    <div class="hero-inner">
+
+<!-- ===============================
+     HERO
+=============================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <a id="sliderLink" href="https://comic-walker.com/detail/KC_006257_S/episodes/KC_0062570000200011_E?episodeType=latest" target="_blank" rel="noopener noreferrer">
       <img id="sliderImage" src="images/heroslider/hero1.png" alt="トップビジュアル">
-      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-      <button class="next" onclick="changeImage(1)">&#10095;</button>
-    </div>
-  </section>
+    </a>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+</section>
+
 
   <!-- ===============================
        TWO COLUMN (上段)
@@ -119,22 +128,24 @@
         <div class="profile-card profile-card-secondary">
           <ul class="profile-list">
             <li>東京都在住</li>
-            <li>ふたご座</li>
+            <li>誕生日：6月7日</li>
             <li>出身：香川県</li>
             <li>フリーの漫画家兼イラストレーター</li>
           </ul>
           <ul class="profile-list profile-list-history">
             <li>2000年に白泉社「ザ・花とゆめ」にて少女漫画デビュー</li>
-            <li>6年ほど「花とゆめ」系列雑誌で読み切りやシリーズ連載をした後、
-              2006年フレックスコミックス「少年ブラッド」にて少年漫画デビュー。
-              以降、少女漫画や少年漫画を並行してコラボや原作ものを連載
+            <li>2006年フレックスコミックス「少年ブラッド」にて少年漫画デビュー。
             </li>
-            <li>2007年以降～ゲーム系エッセイ漫画、4コマ漫画、少年誌系ストーリー漫画、
+            <li>2007年以降～ゲーム系エッセイ漫画、4コマ漫画、ストーリー漫画、
               ショートギャグ等、幅広く執筆
               <br>※ 詳しくは「<a href="/works">仕事情報</a>」へ
             </li>
+            <li>別名義「内水亜彩子」で異世界系（女性向け）漫画執筆
+            </li>
             <li>その他：ゲームスチル、ドラマCDシナリオ、イラストやコミカライズ、
               企業案件の漫画・イラスト制作
+            </li>
+            <li>『DOAXVV』公式生放送にて『DEAD OR ALIVE Xtreme Venus Vacation』に関する最新情報をお届け
             </li>
           </ul>
         </div>
@@ -145,52 +156,23 @@
 <!-- ===============================
      BOTTOM TWO COLUMN（右カラムにツイート埋め込み）
 =============================== -->
+<!-- ===============================
+     BOTTOM TWO COLUMN（右カラムにツイート埋め込み）
+=============================== -->
 <section class="bottom-two-column">
   <div class="bottom-two-column-inner">
 
-    <!-- LEFT COLUMN（NOW ON SALE! を配置） -->
     <div class="bottom-column-left">
       <div class="bottom-left-inner">
         <h2 class="now-on-sale">NOW ON SALE!</h2>
 
-        <!-- ここに商品やコンテンツを追加していく -->
+        </div>
+      
+      <div id="comicsGrid" class="product-grid">
+        <p>読み込み中...</p>
       </div>
-      <div class="product-grid">
-  <a href="https://www.amazon.co.jp/%E8%B1%8A%E7%94%B0%E3%81%95%E3%82%93%E3%81%AF%E6%82%A9%E3%81%BE%E3%81%AA%E3%81%84%E3%80%82-%EF%BC%93-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B0B8QPYMC8?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product1.jpg" alt="豊田さんは悩まない。３">
-    <p class="product-name">豊田さんは悩まない。３</p>
-  </a>
-
-  <a href="https://www.amazon.co.jp/%E3%81%93%E3%81%86%E8%A6%8B%E3%81%88%E3%81%A6%E6%97%A5%E6%B8%A1%E3%81%8F%E3%82%93%E3%81%AE%E5%A5%B3%E5%AD%90%E5%8A%9B%E3%81%AF%EF%BC%95%EF%BC%93%E4%B8%87%E3%81%A7%E3%81%99-%E4%B9%99%E5%A5%B3%E3%81%BB%E3%82%8B%E3%82%82%E3%82%93-2-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B09TZJ44NF?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product2.jpg" alt="こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2">
-    <p class="product-name">こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2</p>
-  </a>
-
-  <a href="https://www.amazon.co.jp/%E6%81%8B%E3%81%AF%E3%80%81%E3%82%A2%E3%83%A9%E3%82%B5%E3%83%BC%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%8B%E3%82%89%E3%80%822-%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%BB%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%B4%A5%E3%80%85%E5%B7%B3%E3%81%82%E3%82%84-ebook/dp/B08BHHHXQH?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product3.jpg" alt="恋は、アラサーになってから。2">
-    <p class="product-name">恋は、アラサーになってから。2</p>
-  </a>
-
-  <a href="https://www.amazon.co.jp/ALIVE-Xtreme-Vacation-%E5%85%AC%E5%BC%8F%EF%BC%94%E3%82%B3%E3%83%9E%E3%83%9E%E3%83%B3%E3%82%AC-%E3%82%84%E3%82%8F%E3%82%89%E3%81%8B%EF%BC%94%E3%82%B3%E3%83%9E%E2%98%86%E3%83%96%E3%82%A4%E3%83%96%E3%82%A4-ebook/dp/B084L1P7ZY?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product4.jpg" alt="DEAD OR ALIVE Xtreme Venus Vacation 公式４コママンガ やわらか４コマ☆ブイブイ">
-    <p class="product-name">DEAD OR ALIVE Xtreme Venus Vacation 公式４コママンガ やわらか４コマ☆ブイブイ</p>
-  </a>
-
-  <a href="https://www.amazon.co.jp/%E8%B2%9E%E5%AD%90%E3%81%95%E3%82%93%E3%81%A8%E3%81%95%E3%81%A0%E3%81%93%E3%81%A1%E3%82%83%E3%82%93-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B07RMCJDQX?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product5.jpg" alt="貞子さんとさだこちゃん">
-    <p class="product-name">貞子さんとさだこちゃん</p>
-  </a>
-
-  <a href="https://www.amazon.co.jp/%E4%BA%BA%E6%B0%97%E3%83%9E%E3%83%B3%E3%82%AC%E5%AE%B6%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE15%E3%81%AE%E6%B3%95%E5%89%87-2-MFC-%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84-ebook/dp/B07PGRKKFX?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.C-HslFdzao1ZAINIDsnnNjRd1rpKFl44sWheNXRXuYxYnZsJmsydq8WYNMVq1T0bsf5K1Rcr8nZAAqQGWgxgkNnrsF54X4Hjaiqj1xbQIkxvzQPPvsz-naQ93LynzF-SelxQx-xU0ZrvInQB1RXLWgOnl0HROnHLsnl8TeHLLFrx_pjEGYDLqXa1Io8fTTTH0aUKSJjaaEvFqUH0Oi-5Ow6MnKbeHXLcyf9I_FVgSqU.tP_bVBr3bTwKBEyVDgFN3FrJwMYfbck5XI6nKyIOdDs&dib_tag=AUTHOR" target="_blank" class="product-item">
-    <img src="images/nowonsale/product6.jpg" alt="人気マンガ家になるための15の法則2">
-    <p class="product-name">人気マンガ家になるための15の法則2</p>
-  </a>
-</div>
-
-
     </div>
 
-    <!-- RIGHT COLUMN（ツイート埋め込み） -->
     <div class="bottom-column-right twitter-column">
       <blockquote class="twitter-tweet">
         <p lang="ja" dir="ltr">

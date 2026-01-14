@@ -1,0 +1,40 @@
+{
+  "comics": [
+    {
+      "title": "【ここに新刊タイトルを入力】",
+      "image": "/images/nowonsale/new_image.jpg",
+      "url": "https://www.amazon.co.jp/...",
+      "note": "←更新時はここを書き換えて、この下にカンマを入れてください"
+    },
+    {
+      "title": "豊田さんは悩まない。３",
+      "image": "/images/nowonsale/豊田さんは悩まない。３.jpg",
+      "url": "https://www.amazon.co.jp/dp/B0B8QPYMC8"
+    },
+    {
+      "title": "こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2",
+      "image": "/images/nowonsale/こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B09TZJ44NF"
+    },
+    {
+      "title": "恋は、アラサーになってから。2",
+      "image": "/images/nowonsale/恋は、アラサーになってから。2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B08BHHHXQH"
+    },
+    {
+      "title": "やわらか４コマ☆ブイブイ",
+      "image": "/images/nowonsale/やわらか４コマ☆ブイブイ.jpg",
+      "url": "https://www.amazon.co.jp/dp/B084L1P7ZY"
+    },
+    {
+      "title": "貞子さんとさだこちゃん",
+      "image": "/images/nowonsale/貞子さんとさだこちゃん.jpg",
+      "url": "https://www.amazon.co.jp/dp/B07RMCJDQX"
+    },
+    {
+      "title": "人気マンガ家になるための15の法則2",
+      "image": "/images/nowonsale/人気マンガ家になるための15の法則2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B07PGRKKFX"
+    }
+  ]
+}

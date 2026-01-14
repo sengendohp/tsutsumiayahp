@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>津々巳あや　オフィシャルサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* 仕事情報セクションのスタイル */
+    #worksContainer {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .work-section { margin-bottom: 60px; }
+    .category-title { 
+      font-size: 1.5rem;
+      border-bottom: 2px solid #333; 
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .work-grid {
+      column-count: 1;
+      column-gap: 50px;
+    }
+    @media (min-width: 768px) { .work-grid { column-count: 2; } }
+    @media (min-width: 1200px) { .work-grid { column-count: 3; } }
+
+    .work-item {
+      break-inside: avoid;
+      margin-bottom: 30px;
+    }
+    .work-year { 
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; 
+      display: block; 
+      font-size: 1.2em; 
+      color: #e67e22; /* アクセントカラー（お好みで変えてください） */
+      border-bottom: 1px solid #eee;
+      margin-bottom: 8px;
+    }
+    .work-content { 
+      white-space: pre-wrap; 
+      font-size: 0.95em;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" alt="AYAIRO 津々巳あや公式ページ"></a>
+    </div>
+    <div class="header-right">
+      <button class="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="social-icons">
+        <a href="https://sengendo.jp/" target="_blank" rel="noopener noreferrer"><img src="/images/ヘッダー1.png" alt="千元堂"></a>
+        <a href="https://x.com/aya67b" target="_blank" rel="noopener noreferrer"><img src="/images/x-icon.png" alt="X"></a>
+        <a href="https://www.youtube.com/@aya67b" target="_blank" rel="noopener noreferrer"><img src="/images/youtube-icon.png" alt="YouTube"></a>
+        <a href="https://note.com/aya67b" target="_blank" rel="noopener noreferrer"><img src="/images/note-icon.png" alt="note"></a>
+        <a href="/contact" class="contact-link">お問い合わせ</a>
+      </div>
+      <nav class="main-nav">
+        <a href="/works" class="nav-link">仕事情報</a>
+        <a href="/comics/" class="nav-link">既刊案内</a>
+        <div class="nav-dropdown">
+          <a href="javascript:void(0)" class="nav-link dropdown-trigger">リンク</a>
+          <div class="dropdown-menu">
+            <a href="https://comic-walker.com/search?keyword=%E6%B4%A5%E3%80%85%E5%B7%B3%E3%81%82%E3%82%84" target="_blank">カドコミ</a>
+            <a href="https://www.amazon.co.jp/stores/%E6%B4%A5%E3%80%85%E5%B7%B3-%E3%81%82%E3%82%84/author/B004LVBSUK" target="_blank">Amazon</a>
+            <a href="https://sengendo.jp/" target="_blank">千元堂</a>
+          </div>
+        </div>
+        <a href="https://www.pixiv.net/users/1718498" target="_blank" class="nav-link">pixiv</a>
+        <a href="https://aya67b.livedoor.blog/" target="_blank" class="nav-link">ブログ</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="worksContainer">仕事情報を読み込み中...</div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <p><a href="http://tutumiaya.com/" target="_blank">｜ホームページ｜</a></p>
+        <p>Copyright 2026 - Tsutsumi Aya All Rights Reserved.</p>
+        <p>無断転載・二次利用は禁止しております</p>
+    </div>
+</footer>
+
+<a href="#" class="floating-btn" id="scrollToTop">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</a>
+
+<script>
+  // DOMが完全に読み込まれてから実行
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('worksContainer');
+    
+    fetch('/data/works.json')
+      .then(res => {
+        if (!res.ok) throw new Error('JSONファイルが見つかりません');
+        return res.json();
+      })
+      .then(data => {
+        container.innerHTML = ''; // 読み込み中を消す
+        
+        data.works.forEach(section => {
+          const itemsHtml = section.items.map(item => `
+            <div class="work-item">
+              <span class="work-year">${item.year}</span>
+              <div class="work-content">${item.content}</div>
+            </div>
+          `).join('');
+
+          const sectionHtml = `
+            <section class="work-section">
+              <h2 class="category-title">■${section.category}</h2>
+              <div class="work-grid">${itemsHtml}</div>
+            </section>
+          `;
+          container.insertAdjacentHTML('beforeend', sectionHtml);
+        });
+      })
+      .catch(err => {
+        container.innerHTML = `<p style="color:red;">データの読み込みに失敗しました: ${err.message}</p>`;
+      });
+  });
+</script>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
