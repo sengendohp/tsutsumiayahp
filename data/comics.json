@@ -1,20 +1,104 @@
 {
   "comics": [
     {
-      "title": "【ここに新刊タイトルを入力】",
-      "image": "/images/nowonsale/new_image.jpg",
-      "url": "https://www.amazon.co.jp/...",
-      "note": "←更新時はここを書き換えて、この下にカンマを入れてください"
+      "title": "少女に転生したシリアルキラーは、無慈悲にNarrを追い詰める。1",
+      "image": "/images/nowonsale/少女に転生したシリアルキラーは、無慈悲にNarrを追い詰める。1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B0FV6LVRML"
     },
     {
-      "title": "豊田さんは悩まない。３",
-      "image": "/images/nowonsale/豊田さんは悩まない。３.jpg",
-      "url": "https://www.amazon.co.jp/dp/B0B8QPYMC8"
+      "title": "へたれ女魔王の入れかわり2",
+      "image": "/images/nowonsale/へたれ女魔王の入れかわり2.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B0D5Y8J1NV"
     },
     {
-      "title": "こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2",
-      "image": "/images/nowonsale/こう見えて日渡くんの女子力は５３万です -乙女ほるもん-2.jpg",
+      "title": "へたれ女魔王の入れかわり1",
+      "image": "/images/nowonsale/へたれ女魔王の入れかわり1.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B0CH2MY4JN"
+    },
+    {
+      "title": "豊田さんは悩まない。3",
+      "image": "/images/nowonsale/豊田さんは悩まない。3.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B0B8QPYMC8"
+    },
+    {
+      "title": "豊田さんは悩まない。2",
+      "image": "/images/nowonsale/豊田さんは悩まない。2.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B09L7J4KQQ"
+    },
+    {
+      "title": "豊田さんは悩まない。1",
+      "image": "/images/nowonsale/豊田さんは悩まない。1.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B08VRSCDVN"
+    },
+    {
+      "title": "やわらか4コマ☆ブイブイ",
+      "image": "/images/nowonsale/やわらか4コマ☆ブイブイ.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B084L1P7ZY"
+    },
+    {
+      "title": "貞子さんとさだこちゃん",
+      "image": "/images/nowonsale/貞子さんとさだこちゃん.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B07RMCJDQX"
+    },
+    {
+      "title": "人気マンガ家になるための15の法則2",
+      "image": "/images/nowonsale/人気マンガ家になるための15の法則2.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B07PGRKKFX"
+    },
+    {
+      "title": "人気マンガ家になるための15の法則1",
+      "image": "/images/nowonsale/人気マンガ家になるための15の法則1.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B07NH82P4M"
+    },
+    {
+      "title": "日渡くんの女子力は53万です2",
+      "image": "/images/nowonsale/日渡くんの女子力は53万です2.jpg",
       "url": "https://www.amazon.co.jp/dp/B09TZJ44NF"
+    },
+    {
+      "title": "日渡くんの女子力は53万です1",
+      "image": "/images/nowonsale/日渡くんの女子力は53万です1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B09RSQDX2W"
+    },
+    {
+      "title": "明×暗SCRAMBLE 4",
+      "image": "/images/nowonsale/明×暗SCRAMBLE 4.jpg",
+      "url": "https://www.amazon.co.jp/dp/B07B9X6YRJ"
+    },
+    {
+      "title": "明×暗SCRAMBLE 3",
+      "image": "/images/nowonsale/明×暗SCRAMBLE 3.jpg",
+      "url": "https://www.amazon.co.jp/dp/B076B8X6XP"
+    },
+    {
+      "title": "明×暗SCRAMBLE 2",
+      "image": "/images/nowonsale/明×暗SCRAMBLE 2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B071HN79V6"
+    },
+    {
+      "title": "明×暗SCRAMBLE 1",
+      "image": "/images/nowonsale/明×暗SCRAMBLE 1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B06VWDZ1PN"
+    },
+    {
+      "title": "女子大生の日常4",
+      "image": "/images/nowonsale/女子大生の日常4.jpg",
+      "url": "https://www.amazon.co.jp/dp/B01D1Q4Z5U"
+    },
+    {
+      "title": "女子大生の日常3",
+      "image": "/images/nowonsale/女子大生の日常3.jpg",
+      "url": "https://www.amazon.co.jp/dp/B015DS7NM6"
+    },
+    {
+      "title": "女子大生の日常2",
+      "image": "/images/nowonsale/女子大生の日常2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00R71GH8O"
+    },
+    {
+      "title": "女子大生の日常1",
+      "image": "/images/nowonsale/女子大生の日常1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00JXEFKTU"
     },
     {
       "title": "恋は、アラサーになってから。2",
@@ -22,19 +106,74 @@
       "url": "https://www.amazon.co.jp/dp/B08BHHHXQH"
     },
     {
-      "title": "やわらか４コマ☆ブイブイ",
-      "image": "/images/nowonsale/やわらか４コマ☆ブイブイ.jpg",
-      "url": "https://www.amazon.co.jp/dp/B084L1P7ZY"
+      "title": "恋は、アラサーになってから。1",
+      "image": "/images/nowonsale/恋は、アラサーになってから。1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B07TKMV1XG"
     },
     {
-      "title": "貞子さんとさだこちゃん",
-      "image": "/images/nowonsale/貞子さんとさだこちゃん.jpg",
-      "url": "https://www.amazon.co.jp/dp/B07RMCJDQX"
+      "title": "狩りぷれっくす!",
+      "image": "/images/nowonsale/狩りぷれっくす!.jpg",
+      "url": "https://www.amazon.co.jp/dp/B01EQQNWUS"
     },
     {
-      "title": "人気マンガ家になるための15の法則2",
-      "image": "/images/nowonsale/人気マンガ家になるための15の法則2.jpg",
-      "url": "https://www.amazon.co.jp/dp/B07PGRKKFX"
+      "title": "モンでき。狩祭編7",
+      "image": "/images/nowonsale/モンでき。狩祭編7.jpg",
+      "url": "https://www.amazon.co.jp/dp/B012EU89I8"
+    },
+    {
+      "title": "モンでき。とんがり編6",
+      "image": "/images/nowonsale/モンでき。とんがり編6.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00O4QJVNI"
+    },
+    {
+      "title": "モンでき。むいむい編5",
+      "image": "/images/nowonsale/モンでき。むいむい編5.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00K2MEAJS"
+    },
+    {
+      "title": "モンでき。三つ巴編4",
+      "image": "/images/nowonsale/モンでき。三つ巴編4.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00F0KAHQW"
+    },
+    {
+      "title": "モンでき。闇鍋編3",
+      "image": "/images/nowonsale/モンでき。闇鍋編3.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00C1UJZ1M"
+    },
+    {
+      "title": "モンでき。凸凹編2",
+      "image": "/images/nowonsale/モンでき。凸凹編2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00C1UJZ1W"
+    },
+    {
+      "title": "モンハン持ちができません。1",
+      "image": "/images/nowonsale/モンハン持ちができません。1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B00C1UJZ26"
+    },
+    {
+      "title": "終活女子高生2",
+      "image": "/images/nowonsale/終活女子高生2.jpg",
+      "url": "https://www.amazon.co.jp/dp/B01N7VFOQV"
+    },
+    {
+      "title": "終活女子高生1",
+      "image": "/images/nowonsale/終活女子高生1.jpg",
+      "url": "https://www.amazon.co.jp/dp/B01ARJYV8K"
+    },
+    {
+      "title": "12C -Twelve Crysis- 2",
+      "image": "/images/nowonsale/12C -Twelve Crysis- 2.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B00J4KDBP8"
+    },
+    {
+      "title": "12C -Twelve Crysis- 1",
+      "image": "/images/nowonsale/12C -Twelve Crysis- 1.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B0097287AC"
+    },
+    {
+      "title": "ラブルートゼロ",
+      "image": "/images/nowonsale/ラブルートゼロ.jpg",
+      "url": "https://www.amazon.co.jp/gp/product/B00JK8L8UE"
     }
   ]
 }
