@@ -606,31 +606,64 @@ nav a:hover::after {
 /* ===============================
    PRODUCTS
 ================================ */
+/* ===============================
+    PRODUCTS
+================================ */
 .now-on-sale {
   font-size: 30px;
   font-weight: 700;
   color: #000;
+  margin-bottom: 20px;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* PC時は3列 */
+  gap: 30px 20px;
   margin-top: 20px;
   width: 100%;
 }
 
+/* スマホ等で1列〜2列にしたい場合はこちらを調整 */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .product-item {
-  position: relative;
+  position: relative; /* ラベルの基準位置 */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  overflow: hidden;
-  border-radius: 8px;
   transition: transform 0.2s ease;
+}
+
+/* --- ラベルのスタイル --- */
+.product-label {
+  position: absolute;
+  top: 0;
+  right: 0; /* 右上に変更 */
+  z-index: 10;
+  padding: 2px 6px;
+  font-size: 9px; /* より小さく */
+  font-weight: 500;
+  color: #fff;
+  background-color: #999; /* 控えめなグレー */
+  border-radius: 0 8px 0 8px; /* 画像の角に合わせる */
+  letter-spacing: 0.5px;
+  pointer-events: none;
+}
+
+.status-sale {
+  background-color: #ff4785; /* 電子あり：ピンク */
+}
+
+.status-non-digital {
+  background-color: #666; /* 電子なし：グレー */
 }
 
 .product-item img {
@@ -639,33 +672,29 @@ nav a:hover::after {
   height: auto;
   display: block;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 軽く影をつけると本っぽくなります */
   transition: transform 0.3s ease;
 }
 
-.product-item::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0);
-  transition: background 0.3s ease;
-  border-radius: 8px;
-  pointer-events: none;
-}
-
-.product-item:hover::after {
-  background: rgba(255,255,255,0.3);
-}
-
-.product-item:hover img {
+/* リンクがある(aタグ)時だけホバー効果を出す */
+a.product-item:hover img {
   transform: scale(1.05);
 }
 
+/* リンクがない(divタグ)は少し暗くして「手に取れない感」を出す（お好みで） */
+div.product-item img {
+  opacity: 0.7;
+}
+
+.product-item {
+  margin-bottom: 10px;
+}
+
 .product-name {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 13px;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 /* ===============================
